@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portafolio MariaSu Orrego </title>
+    <enlace rel="preconectar" href="https://fonts.googleapis.com">
+    <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+    <enlace href="https: //fonts.googleapis.com/css2? family= Questrial & display=swap" rel="hoja de estilo">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/icons/css/all.css">
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+
+    <nav class="navegador__header">
+        <div class="container nav">
+            <div class="logo">
+                <a href="index.html"><img src="imgs/Nombre.png"> </a>
+            </div>
+            <ul>
+                <li><a href="#seccion1">Conóceme</a></li>
+                <li><a href="#seccion2">Portafolio</a></li>
+                <li><a href="#seccion3">Pasiones</a></li>
+                <li><a href="#seccion4">Contáctame</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="sobremi" id="seccion1">
+            <div class="foto">
+                <img src="imgs/Foto.png">
+            </div>
+            <div class="wrap">
+                <h1>Conóceme</h1> <br>
+                <p> Soy estudiante de Publicidad de séptimo semestre en la <br>
+                    <strong> Universidad Católica Luis Amigó </strong> , apasionada por la creación
+                    de estrategias creativas que impulsen las marcas.
+                </p> <br>
+
+                <p> Manejo Programas como <strong> Illustrator, Photoshop, After Effects.</strong> </p>
+                
+                <div class="iconos">
+                  
+                    <img src="imgs/despues-de-los-efectos.png">
+                    <img src="imgs/photoshop.png">
+                    <img src="imgs/ilustrador.png">
+                    
+        
+                 </div>
+   		<div class="down animate__animated animate__heartBeat animate__infinite	infinite animate__slower	3s">
+                <a href="#seccion2"><i class="fa-solid fa-circle-chevron-down"></i></a>
+                 </div>
+            </div>
+     </section>
+
+     <section class="portafolio" id="seccion2">
+        <div class="wrap">
+            <h1>Portafolio</h1>
+                 <!-- Swiper -->
+                 <div class="swiper mySwiper swiper-h">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="imgs/Portafolio1.jpg"></div>
+                        <div class="swiper-slide"><img src="imgs/Portafolio2.png"></div>
+                        <div class="swiper-slide"><img src="imgs/Portafolio3.png"></div>
+                        <div class="swiper-slide"><img src="imgs/Portafolio4.png"></div>
+                        <div class="swiper-slide"><img src="imgs/Portafolio5.png"></div>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                      </div>
+    </section>
+
+    <section class="pasion" id="seccion3">
+            <h1>Pasiones</h1> <br>
+            <p> Me apasiona el cielo, el arte, la literatura y la moda. </p>  
+
+        <section class="pasiones">
+                <div class="cielo">
+                    <img src="imgs/Cielo.png">
+                    <p>Me inspira</p>
+                </div>
+    
+                <div class="arte">
+                    <img src="imgs/Arte.png">
+                    <p> Me libera</p>
+                </div>
+    
+                <div class="libros">
+                    <img src="imgs/Libros.png">
+                    <p>Me enseñan</p>
+                </div>            
+    
+                <div class="moda">
+                    <img src="imgs/Moda.png">
+                    <p>Me identifica</p>
+                </div> 
+
+                
+         </section>
+    </section>
+       
+
+     
+    
+
+
+    <section class="contacto" id="seccion4">
+
+            <div class="logos">
+                <h1> Contactos </h1>
+                
+                <div class="ws">
+                
+                    <a href="https://www.instagram.com/susan.orregoal/" target="_blank"><img src="imgs/Instagram.png"></a> 
+                    <a href="https://www.facebook.com/susana.orrego.961/"target="_blank"><img src="imgs/Facebook.png"></a>
+                    <a href="https://twitter.com/mariasuorrego"target="_blank"><img src="imgs/Twtter.png"></a>  
+                    <a href="https://twitter.com/mariasuorrego"target="_blank"><img src="imgs/Linkedln.png"></a>                   
+                  
+                </div>
+
+    </section>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,502 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+    text-decoration: none;
+}
+
+:root{
+    --color-primario: #0b1319;
+    --color-segundario: #6096ba;
+    --color-terciario: #274c77;
+    --color-adicional: #ffffff;
+    --tipografia: 15px;
+}
+
+img{
+    width: 100%; 
+    height: auto;
+}
+
+
+body {
+    background-color: #fff;
+}
+
+.container{
+    display: flex;
+    width: 70%;
+    max-width: 1700px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    width: 180px;
+    justify-content: flex-start;
+    margin-left: 5em;
+}
+nav {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+}
+
+p{
+    line-height: 1.5em;
+}
+
+nav .nav {
+    padding: .9em 0em;
+}
+
+
+nav .container ul li {
+    display: inline;
+    padding: .2em;
+}
+
+nav .container ul li a{
+    font-size: var(--tipografia);
+    padding: .8em 1em;
+    color: var(--color-adicional);
+    background-color: var(--color-segundario);
+    border-radius: 1em;
+    padding: 0.5em;
+
+}
+
+nav .container ul li a:hover{
+    color: var(--color-adicional);
+    background-color: var(--color-terciario);
+}
+
+
+section .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    max-width: 1700px;
+    text-align: center;
+    padding-left: 5em;
+    padding-right: 3em; 
+    flex-basis: 50%;
+    margin-top: 1em;
+}
+
+.sobremi .down {
+    margin-top: 2em;
+
+}
+
+.sobremi {
+    background-color: var(--color-primario);
+    display: flex;
+    padding-left: 5em;
+    padding-top: 2em;
+}
+
+.sobremi a{
+    color: var(--color-segundario);
+    
+}
+
+.sobremi a:hover{
+    color: #fff;
+}
+
+.foto {
+    width: 500px;
+    align-self: center;
+    margin-left: 3em;
+    margin-top: 1em;
+}
+
+.wrap h1{
+    color: var(--color-segundario);
+    font-size: 30px;
+}
+
+
+.wrap p{
+    color: #fff;
+    font-size: var(--tipografia);
+}
+
+.iconos {
+    width: 70px;
+    display: flex;
+    margin-top: 1em;
+    margin-right: 8em;
+    
+}
+
+.iconos img{
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    align-items: center;
+}
+
+
+.portafolio {
+    background-color: var(--color-segundario);
+    margin-top: -1em;
+    padding-bottom: 2em;
+
+}
+
+.portafolio h1{
+    color: var(--color-adicional);
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.pasion {
+    background-color: var(--color-terciario);
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: 4em;
+    height: 78vh;
+    max-width: 1700px;
+}
+
+.pasion h1{
+    color: #fff;
+    font-size: 30px;
+}
+
+.pasion p{
+    color: #fff;
+    font-size: 15px; 
+    padding-bottom: 1em;
+
+}
+
+.pasiones {
+    background-color: var(--color-terciario);
+    display: flex;
+    flex-direction: row;
+    padding-top: 2em;
+    padding-left: 5em;
+    padding-right: 5em;
+    height: 42vh;
+    margin-bottom: 7em;
+    font-size: 8px;
+}
+
+.cielo {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    padding-right: 1em;
+}
+
+.arte {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    padding-right: 1em;
+}
+
+.libros {
+    text-align: center;
+    color: #fff;
+    font-size:12px;
+    padding-right: 1em;
+}
+
+.moda {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+
+.contacto {
+    background-color: var(--color-primario);
+    margin-top: -1em;
+    display: flex;
+    justify-content: center;
+    height: 25vh;
+}
+
+.contacto h1{
+    color: var(--color-adicional);
+    padding-left: 2em;
+
+}
+
+
+.logos {
+   
+    margin-top: 2.5em;
+}
+
+.ws {
+    width: 200px;
+    display: flex;
+    margin-top: 1em;
+    align-items: center;
+    padding: 2px;
+
+}
+
+
+
+
+
+
+.gmail{
+    width: 30px;
+    display: flex;
+    margin-top: 1em;
+    align-items: center;
+}
+
+.gmail p{
+    font-size: 40px;
+    color: #fff;
+}
+
+/*Acá empieza el Slider*/
+
+.swiper {
+    width: 90%;
+    height: 70%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-v {
+    background: #eee;
+  }
+  /*Final del Slider*/
+
+
+
+
+
+
+  
+  @media (min-width: 768px) and (max-width: 1024px)  {
+
+    .container{
+        flex-direction: column;
+    }
+
+    nav .container ul {
+        justify-content: center;
+        margin-right: -8em;
+        margin-left: -8em;
+        display: flex; 
+        flex-wrap: wrap;   
+        padding: 1em;
+    }
+
+    nav .container ul li a {
+        font-size: 15px;
+      
+    }
+
+    .logo {
+        margin-left:1.5em;
+    }
+
+    .sobremi{
+        flex-direction: column;
+        padding-left: 1em;
+        padding-bottom: 2em;
+    }
+
+    .foto {
+        width: 400px;
+        padding-top: 7em;
+    }
+    
+    .pasion{
+        flex-direction: column;
+        
+    }
+
+    .pasiones{
+        margin: auto;
+
+    }
+} 
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .container{
+        flex-direction: column;
+
+    }
+
+    nav .container ul {
+        justify-content: center;
+        margin-right: -8em;
+        margin-left: -8em;
+        display: flex; 
+        flex-wrap: wrap;   
+    }
+
+    nav .container ul li a {
+        font-size: 15px;
+        padding: .5em;
+    }
+
+    .logo {
+        margin-left:2em;
+    }
+
+    .sobremi{
+        flex-direction: column;
+        padding-left: .1em;
+        padding-right: 2em;
+        padding-bottom: 2em;
+    }
+
+    .foto {
+        width: 250px;
+        padding-top: 7em;
+    }
+
+    .pasion{
+        padding-bottom: 50em;
+        padding-top: 5em;
+    }
+
+    .pasiones{
+        flex-wrap: wrap;
+        width: 300px;
+        align-self: center;
+
+    }
+
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .container{
+        flex-direction: column;
+    }
+
+    nav .container ul {
+        justify-content: center;
+        margin-right: -5em;
+        margin-left: -5em;
+        display: flex; 
+        flex-wrap: wrap;   
+    }
+
+    nav .container ul li a {
+        font-size: 12px;
+        padding: .3em;
+    }
+
+    .logo {
+        margin-left:2em;
+    }
+
+    .sobremi{
+        flex-direction: column;
+        padding-left: .1em;
+        padding-right: 2em;
+        padding-bottom: 2em;
+    }
+
+    .foto {
+        width: 250px;
+        padding-top: 7em;
+    }
+
+    .pasion{
+        padding-bottom: 40em;
+        padding-top: 5em;
+        padding-bottom: 50em;
+    }
+
+    .pasiones{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cielo {
+        font-size: 10px;
+        width: 200px;
+        padding-bottom: 1em;
+    }
+    
+    .arte {
+        text-align: center;
+        font-size: 10px;
+        width: 200px;
+        padding-bottom: 1em;
+    }
+    
+    .libros {
+        text-align: center;
+        font-size: 10px;
+        width: 200px;
+        padding-bottom: 1em;
+    }
+    
+    .moda {
+        text-align: center;
+        font-size: 10px;
+        width: 200px;
+        padding-bottom: 1em;
+    }
+
+    .portafolio {
+        padding-top: -2em;
+        margin-left: -2em;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 80%;
+      }
+
+
+}
